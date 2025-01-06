@@ -1,0 +1,507 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Nunito",serif;
+}
+
+body {
+    background-color: gray;
+    color: black;
+    
+    
+    
+}
+
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background-color: beige;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 2.5rem;
+    color: black;
+    font-weight: 700;
+    cursor: default;
+}
+
+.navbar a {
+    font-size: 1.5rem;
+    color: black;
+    margin-left: 4rem;
+    font-weight: 700;
+    
+}
+
+.navbar a:hover,
+.navbar a:active {
+    color: white;
+}
+
+#menu-icon {
+    font-size: 24px;
+    color: black;
+    display: none;
+    cursor: pointer;
+
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Home-content h3 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.Home-content h3:nth-of-type(2) {
+    margin-bottom: 2rem;
+}
+
+span {
+    color: skyblue;
+}
+
+
+.Home-content h1 {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+
+/* home image*/
+.home-img img{
+    position: relative;
+    box-shadow: 0 0 25px;
+    width: 25vw;
+    animation: floatimage 4s ease-in-out infinite;
+    border-radius: 50%;
+}
+
+.home-img img:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 5px);
+}
+
+
+
+@keyframes floatimage {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-2.4rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.Home-content p {
+    font-size: 15px;
+}
+
+.sosial-media a {
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border-radius: 50%;
+    font-size: 35px;
+    color: skyblue;
+    margin: 10px 10px 10px ;
+    transition: .5 ease;
+}
+
+.sosial-media a:hover {
+    color: black
+    
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background: black;
+    border-radius: 4rem;
+    font-size: 10px;
+    color: skyblue;
+    letter-spacing: 3px;
+    font-weight: 600;
+    transition: .5 ease;
+}
+
+.btn:hover {
+    color: gray;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    background: gray;
+}
+
+
+.heading {
+    text-align: center;
+    font-size: 30px;
+}
+
+.about-content h2 {
+    text-align: left;
+    line-height: 1.2;
+}
+
+.about-content h3 {
+    font-size: 30px;
+}
+
+.about-content p {
+    font-size: 15px;
+}
+
+/*EDUCATION*/
+
+.heading {
+    text-align: center;
+    font-size: 30px;
+    color: black;
+  }
+  .timeline {
+    position: absolute;
+    top: 50px;
+    left: 25%;
+  }
+  
+
+  .education .timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .education .container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+  .education .content {
+    background: beige;
+    border-radius: 6px;
+    position: relative;
+  }
+  .education .content .tag {
+    font-size: 1, 5rem;
+    padding-top: 1.5rem;
+    padding-left: 1.5rem;
+  }
+  .education .content .desc {
+    margin-left: 1rem;
+    padding-bottom: 1rem;
+  }
+  .education .content .desc h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  .education .content .desc p {
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+
+  /*SKLILS*/
+  .skill {
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    position: relative;
+  }
+  .img-html {
+    width: 600px;
+    height: 600px;
+  }
+  .img-css {
+    margin-bottom: 100px;
+    margin-left: 70px;
+  }
+
+  /*CONTACT*/
+  .contact {
+    background-color: gray;
+    height: 100vh;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    padding-top: 40px;
+    padding-bottom: 100px;
+  }
+  
+  .contact h2 {
+    color: black;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  .contact form {
+    color: black;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+  
+  .contact form label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  
+  .contact form input {
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .contact form textarea {
+    resize: none;
+    border-radius: 10px;
+  }
+  
+  .submit {
+    width: 100px;
+    margin-top: 20px;
+    align-self: end;
+    cursor: pointer;
+  }
+  
+  .submit:hover {
+    background-color: black;
+    color: beige;
+  }
+
+
+  /* Responsive Design untuk Mobile */
+@media (max-width: 768px) {
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    /* Header */
+    .header {
+        padding: 1rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar {
+        display: none; /* Tersembunyi default */
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    #menu-icon {
+        display: block; /* Tampilkan icon menu */
+        cursor: pointer;
+    }
+    .navbar a {
+        margin: 1rem 0; /* Spasi antar link */
+    }
+    #menu-icon.active + .navbar {
+        display: flex; /* Tampilkan navbar saat aktif */
+    }
+
+    /* Home Section */
+    .home {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem 1rem;
+    }
+    .home-img img {
+        width: 60%; /* Ukuran lebih kecil */
+    }
+    .Home-content h1 {
+        font-size: 2rem;
+    }
+
+    /* About Section */
+    .about {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2rem 1rem;
+    }
+    .about-content {
+        text-align: center;
+    }
+
+    /* Education Section */
+    .education .timeline {
+        left: 0; /* Centerkan timeline */
+        width: 100%;
+    }
+    .education .container {
+        width: 100%; /* Penuh layar */
+    }
+
+    /* Skills Section */
+    .img-html, .img-css {
+        width: 80%; /* Ukuran gambar lebih kecil */
+        height: auto;
+        margin: auto;
+    }
+
+    /* Contact Section */
+    .contact {
+        padding: 1rem;
+    }
+    .contact form {
+        width: 100%; /* Sesuai lebar layar */
+    }
+}
+
+
+/* togel */
+.toggel,
+.menu2 {
+  display: none;
+}
+
+.togel {
+  display: none;
+  flex-direction: column;
+  height: 28px;
+  justify-content: space-between;
+}
+
+.togel input {
+  position: absolute;
+  width: 40px;
+  height: 28px;
+  left: auto;
+  margin-left: 300px;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.togel span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background-color: black;
+  border-radius: 3px;
+  right: 5px;
+  transition: all 0.3s;
+}
+
+.togel span:nth-child(2) {
+  transform-origin: 0 0;
+}
+
+.togel span:nth-child(4) {
+  transform-origin: 0 100%;
+}
+
+.togel input:checked ~ span:nth-child(2) {
+  transform: rotate(45deg) translate(1px, -5px);
+}
+
+.togel input:checked ~ span:nth-child(3) {
+  transform: scale(0);
+}
+
+.togel input:checked ~ span:nth-child(4) {
+  transform: rotate(-45deg) translate(8px, -5px);
+}
+
+/* akhir togel */
+/* akhir header */
+
+@media screen and (max-width: 1200px) {
+  .home {
+    display: block;
+    width: 100%;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  /* togel */
+  .togel {
+    display: flex;
+  }
+
+  .togel span {
+    margin-left: 300px;
+  }
+
+  .menu2 {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    background-color: rgba(219, 209, 209, 0.186);
+    top: -5000px;
+    width: 100%;
+    left: 0;
+    height: 1;
+    margin-top: 20px;
+  }
+  .togel ul li {
+    padding: 50px;
+    text-align: center;
+  }
+
+  .togel ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    transition: 0.8;
+  }
+
+  .togel ul li:hover {
+    transform: scale(1.3) translateY(-5px);
+  }
+
+  .togel input:checked ~ .menu2 {
+    top: -20px;
+    transition: 1s;
+  }
+
+  .judul-utama input {
+    position: absolute;
+    left: 91%;
+    opacity: 0;
+    top: 17px;
+    margin-right: 0;
+    z-index: 111;
+  }
+  /* akhir toggel */
+
+  .navbar {
+    display: none;
+  }
+}
+
